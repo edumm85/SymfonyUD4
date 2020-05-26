@@ -1,0 +1,26 @@
+<div class="container">
+    <h2>Listado de la base de datos Persona</h2>
+</div>
+<div class="container">
+    <table class="table table-striped">
+    <thead class="thead-dark">
+        <tr>
+            <th>DNI</th>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>Edad</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% set cantidad = resultado | length %}
+        {% for i in range (0, cantidad - 1) %}
+            <tr>
+                <td>{{ resultado[i].dni }}</td>
+                <td>{{ resultado[i].nombre }}</td>
+                <td>{{ resultado[i].apellidos }}</td>
+                <td>{{ resultado[i].edad }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+    </table>
+<div>

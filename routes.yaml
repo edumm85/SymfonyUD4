@@ -1,0 +1,31 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+altaPersona:
+  path: persona/alta
+  controller: App\Controller\PersonaController::alta
+
+nuevaPersona:
+  path: persona/nueva
+  controller: App\Controller\PersonaController::nueva
+
+listadoPersona:
+  path: persona/listado
+  controller: App\Controller\PersonaController::listado
+
+eliminaFormPersona:
+  path: persona/eliminaForm
+  controller: App\Controller\PersonaController::eliminaForm
+
+eliminaPersona:
+  path: persona/elimina
+  controller: App\Controller\PersonaController::elimina
+
+modificaFormPersona:
+  path: persona/modificaForm
+  controller: App\Controller\PersonaController::modificaForm
+
+modificaPersona:
+  path: persona/modifica
+  controller: App\Controller\PersonaController::modifica
